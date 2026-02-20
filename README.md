@@ -1,27 +1,23 @@
-# Booken
-Book Website
-<br>
-<br>
-Read about the method and order used in Medium :
+# Voice Transcript Studio
 
+A browser-based web app for:
 
-https://medium.com/@dhiraj7kr/booken-the-bookselling-website-adf5536bf844
-watch the Demo video :
-<iframe width="420" height="315"
-src="https://youtu.be/NZT9V9YGhAw">
-</iframe>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOOKEN</title>
-</head>
-<body>
-    
-    <iframe width="420" height="315"
-src="https://youtu.be/NZT9V9YGhAw">
+- Voice recording via microphone.
+- Real-time transcript capture (Web Speech API).
+- Saving recording metadata (date, time, duration, word count) and transcript.
+- Viewing/copying transcript details per saved recording.
+- Chatting against your saved transcript sources with source attribution.
+- Adding manual transcript sources for chatbot context.
 
-</iframe>
-</body>
-</html>
+## Run locally
+
+```bash
+python3 -m http.server 4173
+```
+
+Then open `http://localhost:4173`.
+
+## Notes
+
+- Best experience is in modern Chromium browsers (Chrome/Edge) for speech recognition.
+- Data is stored in browser `localStorage`.
